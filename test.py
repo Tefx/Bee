@@ -3,7 +3,6 @@ from bee import Bee, RPCMethod, BeeClient
 
 class PointStorage(Bee):
     def __init__(self):
-        super(PointStorage, self).__init__()
         self.data = []
 
     @RPCMethod
@@ -24,8 +23,7 @@ if __name__ == '__main__':
     # addr = "ipc://tmp.ipc"
 
     if argv[1] == "server":
-        ps = PointStorage()
-        ps.run(addr)
+        PointStorage().run(addr)
     else:
         c = BeeClient(addr)
         data = [[8.58, 2.29] * 5 for _ in xrange(1000000)]
