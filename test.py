@@ -26,7 +26,7 @@ if __name__ == '__main__':
         PointStorage().run(addr)
     else:
         c = BeeClient(addr)
-        data = [[8.58, 2.29] * 5 for _ in range(1000000)]
+        data = [[8.58, 2.29] * 5 for _ in range(10000)]
         if argv[1] == "add":
             print(all(map(c.add, data)))
         elif argv[1] == "add_bulk":

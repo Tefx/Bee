@@ -1,10 +1,9 @@
 # Bee
-An micro Python service framework based on nanomq and messagepack
+An micro Python service framework based on zeromq and messagepack
 
 # Install dependencies
 
-    apt-get install libnanomsg-dev
-    pip install nanomsg msgpack-python
+    pip install pyzmq msgpack-python
 
 
 # Use
